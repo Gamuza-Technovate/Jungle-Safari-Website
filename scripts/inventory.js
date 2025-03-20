@@ -10,7 +10,6 @@ xhr.onload = () => {
       document.getElementById("inventoryTable").innerHTML +=
         `<tr> <td>${item.name}</td><td>${item.price}</td><td>${item.cost}</td><td>${item.stock}</td> </tr>`;
     });
-    console.log(document.getElementById("inventoryTable").innerHTML);
   } else {
     console.log(`Error: ${xhr.status}`);
   }

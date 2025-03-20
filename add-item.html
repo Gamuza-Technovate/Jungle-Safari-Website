@@ -9,9 +9,10 @@
   <body>
     <div class="form-container">
       <h2>Add New Item</h2>
-      <form id="addItemForm">
+      <form id="addItemForm" action="/inventory.html">
         <input type="text" id="itemName" placeholder="Item Name" required />
         <input type="number" id="itemPrice" placeholder="Price" required />
+        <input type="number" id="itemCost" placeholder="Cost" required />
         <input
           type="number"
           id="itemQuantity"
@@ -21,6 +22,6 @@
         <button type="submit">Add Item</button>
       </form>
     </div>
-    <script src="js/script.js"></script>
+    <script src="scripts/add-item.js"></script>
   </body>
 </html>
