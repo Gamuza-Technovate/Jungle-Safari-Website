@@ -1,4 +1,5 @@
 var itemName = document.getElementById("itemName");
+var itemDescription = document.getElementById("itemDescription");
 var itemPrice = document.getElementById("itemPrice");
 var itemCost = document.getElementById("itemCost");
 var itemQuantity = document.getElementById("itemQuantity");
@@ -9,6 +10,7 @@ document.getElementById("addItemForm").addEventListener("submit", function (e) {
 
   const objectifsd = {
     name: itemName.value,
+    description: itemDescription.value,
     price: itemPrice.value,
     cost: itemPrice.value,
     stock: itemQuantity.value,

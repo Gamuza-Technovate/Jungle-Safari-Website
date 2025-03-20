@@ -8,7 +8,7 @@ xhr.onload = () => {
     console.log(data);
     data.forEach((item) => {
       document.getElementById("inventoryTable").innerHTML +=
-        `<tr> <td>${item.name}</td><td>${item.price}</td><td>${item.cost}</td><td>${item.stock}</td> </tr>`;
+        `<tr> <td onmouseover="dhflaf">${item.name}</td><td>${item.description ? item.description : "-"}</td><td>${item.price}</td><td>${item.cost}</td><td>${item.stock}</td> </tr>`;
     });
   } else {
     console.log(`Error: ${xhr.status}`);
